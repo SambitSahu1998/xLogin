@@ -24,7 +24,7 @@ const Form = () => {
           <Typography variant="h4" gutterBottom>Login Page</Typography>
           <div>
           {message && !authenticated && (
-            <Typography variant="body1" color="error">
+            <Typography variant="body1" color="error" sx={{mb:3}}>
               {message}
             </Typography>
           )}
@@ -40,7 +40,7 @@ const Form = () => {
                   required
                 />
               </div>
-              <div>
+              <div style={{marginTop:'8px'}}>
                 <TextField
                   type="password"
                   label="Password"
@@ -50,12 +50,12 @@ const Form = () => {
                   required
                 />
               </div>
-              <Button type="submit" variant="contained" color="primary">
+              <Button type="submit" variant="contained" color="primary" sx={{mt:2}}>
                 Submit
               </Button>
             </form>
           )}
-          {authenticated && <Typography variant="body1" color="green">Welcome, {username}!</Typography>}
+          {authenticated && <Typography variant="body1" sx={{color:"#056608"}}>Welcome, {username}!</Typography>}
         </div>
       </Container>
     );
