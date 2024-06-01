@@ -55,7 +55,7 @@ const Form = () => {
               </Button>
             </form>
           )}
-          {authenticated && <Typography variant="body1">Welcome, {username}!</Typography>}
+          {authenticated && <Typography variant="body1" color="green">Welcome, {username}!</Typography>}
         </div>
       </Container>
     );
